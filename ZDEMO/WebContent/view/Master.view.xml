@@ -1,0 +1,26 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="ZDEMO.view.Master" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="{i18n>PgMst_Title}">
+		<content>
+			<Bar>
+				<contentLeft>
+		
+					<Button text="{i18n>PgMst_BtnTxt1}" press="pressGetMaterial" type="Accept" class="customCss_ForButton"/>
+				</contentLeft>
+				<contentMiddle>
+					<Button text="{i18n>PgMst_BtnTxt2}" press="pressODataSrv" type="Emphasized" />
+				</contentMiddle>
+				<contentRight>
+					<Button text="{i18n>PgMst_BtnTxt3}" press="pressNextPage" type="Emphasized" />
+				</contentRight>
+			</Bar>
+			<List id="idList1" mode="{device>/listMode}" items="{/listItems}">
+				<StandardListItem title="{material}" />
+			</List>
+		</content>
+		<footer>
+			<Bar>
+			</Bar>
+		</footer>
+	</Page>
+</core:View>
